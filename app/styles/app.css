@@ -1,4 +1,38 @@
+* {
+font-family: 'Fira Sans', sans-serif;
+}
+
 img {
   max-width: 350px;
   max-height: 350px;
+}
+
+.display-block {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("http://blog.iamnikon.com/en_GB/wp-content/uploads/SCOTT-A-WOODWARD_1SW1943.jpg");
+  padding-bottom: 20em;
+  background-size: 90em;
+}
+
+.jumbotron h1{
+  font-weight: bold;
+}
+
+.top-links {
+  padding-bottom: 10em;
+  margin-top: -2em;
+  float: right;
+  padding-right: 2em;
+  font-weight: bold;
+}
+
+.top-links a{
+  color: black;
 }

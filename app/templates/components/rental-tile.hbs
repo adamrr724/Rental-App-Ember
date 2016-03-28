@@ -1,8 +1,9 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
   {{#if isImageShowing}}
-    <p><img src="{{rental.image}}" alt="{{rental.type}}" {{action 'imageHide'}}/></p>
+    <p><img src="{{rental.image}}" alt="{{rental.type}}" /></p>
+    <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
   {{else}}
-    <button {{action 'imageShow'}}>Show Image</button>
+    <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
   {{/if}}
-  <button {{action 'delete' rental}}>Delete</button>
+  <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
 </li>
