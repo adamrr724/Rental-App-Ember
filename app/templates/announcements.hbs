@@ -1,0 +1,8 @@
+<h1>Announcements</h1>
+{{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+{{/each}}
+<h3>Add a new announcement</h3>
+<br>
+
+{{new-announcement save5="save6"}}

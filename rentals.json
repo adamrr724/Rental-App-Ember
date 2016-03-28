@@ -11,10 +11,40 @@
     "bedrooms": 1,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
   }, {
-    "owner": "Violet Beauregarde",
+    "owner": "John Sweeney",
     "city": "Portland",
+    "type": "Cardboard Box",
+    "bedrooms": 1,
+    "image": "http://thesandpaper.villagesoup.com/media/Common/19/AE/1289844/St%20Marys%20Box%203.jpg"
+  }, {
+    "owner": "Paul Allen",
+    "city": "Cape Cod",
+    "type": "Beach Cottage",
+    "bedrooms": 2,
+    "image": "http://www.execustay.com/furnished-apartments/new-york/the-centria/property-photos/NewYorkFurnishedApartmentLivingRoom-368x277.jpg"
+  }, {
+    "owner": "Jim Bob",
+    "city": "New York",
     "type": "Apartment",
-    "bedrooms": 3,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }]
+    "bedrooms": 1,
+    "image": "http://www.californiabeaches.com/wp-content/uploads/2015/06/stinson-exterior.jpg"
+  }, {
+    "owner": "Adam Ross Russell",
+    "city": "Versailles",
+    "type": "Chateau",
+    "bedrooms": 345,
+    "image": "http://www.bradleywdick.com/wp-content/uploads/Palace-of-Versailles.jpg"
+  }],
+  "announcements": [{
+      "title": "Fire!",
+      "type": "Emergency",
+      "priority": "High",
+      "message": "Please leave the building!"
+    },
+    {
+        "title": "Earthquake!",
+        "type": "Emergency",
+        "priority": "High",
+        "message": "Please leave the building!"
+      }]
 }

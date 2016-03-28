@@ -1,0 +1,7 @@
+{ "announcements": [{
+    "title": "Fire!",
+    "type": "Emergency",
+    "priority": "High",
+    "message": "Please leave the building!",
+  }]
+}
