@@ -1,9 +1,16 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
-  {{#if isImageShowing}}
-    <p><img src="{{rental.image}}" alt="{{rental.type}}" /></p>
-    <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
-  {{else}}
-    <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
-  {{/if}}
-  <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
-</li>
+
+{{#if isBigImageShowing}}
+  <div class="places">
+      <img src="{{rental.image}}" alt="" {{action 'bigImageHide'}}/>
+      
+  </div>
+{{else}}
+  <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
+    {{#if isImageShowing}}
+      <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
+    {{else}}
+      <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
+    {{/if}}
+    <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
+  </li>
+{{/if}}

@@ -36,3 +36,7 @@ img {
 .top-links a{
   color: black;
 }
+
+li {
+  list-style: none;
+}
