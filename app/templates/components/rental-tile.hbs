@@ -1,16 +1,17 @@
 
 {{#if isBigImageShowing}}
-  <div class="places">
+  <div class="places col-md-4">
       <img src="{{rental.image}}" alt="" {{action 'bigImageHide'}}/>
-      
   </div>
 {{else}}
-  <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
-    {{#if isImageShowing}}
-      <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
-    {{else}}
-      <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
-    {{/if}}
-    <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
-  </li>
+  <div class="places col-md-4">
+    <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
+      {{#if isImageShowing}}
+        <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
+      {{else}}
+        <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
+      {{/if}}
+      <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
+    </li>
+</div>
 {{/if}}

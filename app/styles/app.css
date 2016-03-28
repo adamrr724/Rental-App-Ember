@@ -7,6 +7,10 @@ img {
   max-height: 350px;
 }
 
+body{
+  background-color: #f6f6f6;
+}
+
 .display-block {
   display: block;
 }
@@ -39,4 +43,16 @@ img {
 
 li {
   list-style: none;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.places {
+  padding: 1em;;
+}
+
+.new-rental {
+  text-align: center;
 }
