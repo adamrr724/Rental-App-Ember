@@ -6,7 +6,9 @@ export default Ember.Component.extend({
     rentalFormShow() {
       this.set('addNewRental', true);
     },
-
+    formHide: function() {
+      this.set('addNewRental', false);
+    },
     save1() {
       var params = {
         owner: this.get('owner'),

@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     },
     imageHide: function() {
       this.set('isImageShowing', false);
-
     },
     bigImageHide: function() {
       this.set('isBigImageShowing', false);
