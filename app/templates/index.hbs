@@ -8,8 +8,9 @@
 </div>
 
 <h3 class="main-header">We hope you find exactly what you're looking for in a place to stay.</h3>
+<h6 class="main-header">Click on images to see rental details</h6>
 
-<ul>
+<ul class="image-section">
   {{#each model as |rental|}}
     {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}

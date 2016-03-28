@@ -3,8 +3,8 @@ font-family: 'Fira Sans', sans-serif;
 }
 
 img {
-  max-width: 350px;
-  max-height: 350px;
+width: 350px;
+height: 250px;
 }
 
 body{
@@ -50,7 +50,27 @@ li {
 }
 
 .places {
-  padding: 1em;;
+  padding: 1em;
+
+}
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.places-showing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 236px;
+  overflow: auto;
+  text-align: center;
+  background-color: #6495ED;
+  /*padding-top:7em;
+  padding-bottom: 8em;*/
+  margin: 1em;
+
 }
 
 .new-rental {
