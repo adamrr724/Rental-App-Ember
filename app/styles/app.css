@@ -73,6 +73,13 @@ li {
 
 }
 
+.link a{
+  color: black;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .new-rental {
   text-align: center;
 }
