@@ -27,9 +27,9 @@
           {{input value=image id="image" placeholder=rental.image}}
         </div>
 
-        <button {{action 'update' rental}}>Save</button>
+        <button class="btn btn-success" {{action 'update' rental}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'updateRentalForm'}}>Update</button>
+    <button class="btn btn-primary" {{action 'updateRentalForm'}}>Update</button>
 {{/if}}
