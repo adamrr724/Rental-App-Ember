@@ -63,14 +63,14 @@ li {
   justify-content: center;
   align-items: center;
   width: 350px;
-  height: 236px;
+  height: 250px;
   overflow: auto;
   text-align: center;
-  background-color: #6495ED;
+  background-color: #2a5194;
   /*padding-top:7em;
   padding-bottom: 8em;*/
   margin: 1em;
-
+  border-radius: 10px;
 }
 
 .link a{
