@@ -42,9 +42,9 @@
       "message": "Please leave the building!"
     },
     {
-        "title": "Earthquake!",
-        "type": "Emergency",
-        "priority": "High",
-        "message": "Please leave the building!"
-      }]
+      "title": "Earthquake!",
+      "type": "Emergency",
+      "priority": "High",
+      "message": "Please leave the building!"
+    }]
 }
