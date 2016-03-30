@@ -1,0 +1,10 @@
+<h5>Rentals available in {{city.name}}</h5>
+
+<ul>
+  {{#each city.rentals as |rental|}}
+    <li>{{rental.owner}}'s {{rental.type}}</li>
+    <li><img src="{{rental.image}}" alt="" /></li>
+  {{/each}}
+</ul>
+
+{{yield}}
