@@ -8,9 +8,9 @@ export default Ember.Component.extend({
         title: this.get('title'),
         type: this.get('type'),
         priority: this.get('priority'),
-        message: this.get('message')
+        message: this.get('message'),
       };
-      this.set('addNewAnnouncement', false),
+      this.set('addNewAnnouncement', false);
       this.sendAction('save5', params);
     }
   }

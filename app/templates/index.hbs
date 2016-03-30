@@ -2,11 +2,15 @@
 <h6 class="main-header">Click on images to see rental details</h6>
 
 <ul class="image-section">
-  {{#each model as |rental|}}
+  {{#each model.rentals as |rental|}}
     {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
-<div class="new-rental col-md-12">
-  {{new-rental save2="save3"}}
-</div>
+
+<h2>Cities</h2>
+<ul>
+  {{#each model.cities as |city|}}
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>

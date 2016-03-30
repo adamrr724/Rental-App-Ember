@@ -46,5 +46,12 @@
       "type": "Emergency",
       "priority": "High",
       "message": "Please leave the building!"
-    }]
+    }],
+  "cities": [{
+    "name": "Portland",
+    "country": "USA"
+  }, {
+    "name": "Seattle",
+    "country": "USA"
+  }]
 }

@@ -5,7 +5,7 @@
   </div>
 {{else}}
   <div class="places-showing col-md-4">
-    <li class="link">{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}} <br>
+    <li class="link">{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city.name}} {{/link-to}} <br>
       {{#if isImageShowing}}
         <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
       {{else}}
