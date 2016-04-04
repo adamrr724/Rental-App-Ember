@@ -1,8 +1,11 @@
+<h4>Location: {{fullLocation}}</h4>
+
 <h5>Rentals available in {{city.name}}</h5>
 
 <ul>
-  {{#each city.rentals as |rental|}}
+  {{#each sortedRentals as |rental|}}
     <li>{{rental.owner}}'s {{rental.type}}</li>
+    <li>{{rental-cost rental}}</li>
     <li><img src="{{rental.image}}" alt="" /></li>
   {{/each}}
 </ul>
