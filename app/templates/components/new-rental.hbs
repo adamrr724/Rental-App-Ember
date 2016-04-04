@@ -14,7 +14,7 @@
 
         <div class="form-group">
           <label for="bedrooms">Number of Bedrooms</label>
-          {{input value=bedrooms id="bedrooms"}}
+          {{input value=bedrooms type="number" id="bedrooms"}}
         </div>
 
         <div class="form-group">
@@ -24,7 +24,7 @@
 
         <div class="form-group">
           <label for="cost">Cost per night</label>
-          {{input value=cost id="cost"}}
+          {{input value=cost type="number" id="cost"}}
         </div>
 
         <button {{action 'save1'}}>Save</button>

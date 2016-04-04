@@ -12,9 +12,10 @@ export default Ember.Component.extend({
         city: this.get('city'),
         type: this.get('type'),
         image: this.get('image'),
-        bedrooms: this.get('bedrooms'),
+        bedrooms: parseInt(this.get('bedrooms')),
         cost: parseInt(this.get('cost'))
       };
+      console.log(this.get('cost'));
       this.set('updateRentalForm', false);
       this.sendAction('update', rental, params);
     }

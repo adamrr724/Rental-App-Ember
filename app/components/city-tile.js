@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     return this.get('city.name') + ", " + this.get('city.country');
   }),
   sortedRentals: Ember.computed.sort('city.rentals', 'sorting'),
-  sorting: ['cost:desc'],
+  sorting: ['cost:asc'],
 
   actions: {
     destroyCity(city) {
