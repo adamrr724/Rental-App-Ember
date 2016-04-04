@@ -1,13 +1,13 @@
 <h4>Location: {{fullLocation}}</h4>
 
 <h5>Rentals available in {{city.name}}</h5>
-
+<select action="sortChoice" value=currentValue on='change' class="sortedBy" name="sortedBy">
+  <option selected="selected" value="model.rental" name="all">All</option>
+  <option value="sortedRentals">Price</option>
+  <option value="sortedBedrooms">Bedrooms</option>
+</select>
 <ul>
-  {{#each sortedRentals as |rental|}}
-    <li>{{rental.owner}}'s {{rental.type}}</li>
-    <li>{{rental-cost rental}}</li>
-    <li><img src="{{rental.image}}" alt="" /></li>
-  {{/each}}
+  {{sortChoice}}
 </ul>
 <button class="btn btn-danger btn-lg"{{action 'destroyCity' city}}type="button" name="button">Destroy City</button>
 
