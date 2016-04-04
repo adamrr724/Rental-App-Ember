@@ -1,0 +1,8 @@
+<h4>Sort by</h4>
+{{#if isSelected}}
+  <button type="button" {{action 'toggleCost'}}>Sort by Cost</button>
+  This is currently sorted by # of bedrooms
+{{else}}
+  <button type="button" {{action 'toggleBedrooms'}}>Sort by Bedrooms</button>
+  This is currently sorted by cost
+{{/if}}

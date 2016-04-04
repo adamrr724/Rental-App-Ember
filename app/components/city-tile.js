@@ -4,23 +4,8 @@ export default Ember.Component.extend({
   fullLocation: Ember.computed('city.name', 'city.country', function() {
     return this.get('city.name') + ", " + this.get('city.country');
   }),
-
-  sortChoice: Ember.computed( function() {
-    var choice = this.get('sortedBy');
-    console.log(choice);
-
-    return "{{#each " + choice + " as |rental|}}" +
-      "<li>{{rental.owner}}s {{rental.type}}</li>" +
-      "<li>{{rental-cost rental}}</li>" +
-      "<li><img src='{{rental.image}}' /></li>" +
-    "{{/each}}"
-  }),
-
-  sortBy: ['cost:asc'],
-  sortedRentals: Ember.computed.sort('city.rentals', 'sortBy'),
-
-  sortBy: ['bedrooms:asc'],
-  sortedBedrooms: Ember.computed.sort('city.rentals', 'sortBy'),
+  sortedRentals: Ember.computed.sort('city.rentals', 'sorting'),
+  sorting: ['cost:desc'],
 
   actions: {
     destroyCity(city) {
@@ -31,6 +16,14 @@ export default Ember.Component.extend({
         return city.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    costSort(){
+      var sorting = ['cost:desc'];
+      this.set('sorting', sorting);
+    },
+    bedroomsSort(){
+      var sorting = ['bedrooms:desc'];
+      this.set('sorting', sorting);
     }
   }
 });
