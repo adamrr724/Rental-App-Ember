@@ -4,8 +4,8 @@
   {{#each city.rentals as |rental|}}
     <li>{{rental.owner}}'s {{rental.type}}</li>
     <li><img src="{{rental.image}}" alt="" /></li>
-    <button class="btn btn-danger btn-lg"{{action 'destroyCity' city}}type="button" name="button">Destroy City</button>
   {{/each}}
 </ul>
+<button class="btn btn-danger btn-lg"{{action 'destroyCity' city}}type="button" name="button">Destroy City</button>
 
 {{yield}}

@@ -11,6 +11,6 @@
 <h2>Cities</h2>
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
+    <li>{{city-popularity city}} {{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
 </ul>

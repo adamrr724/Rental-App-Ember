@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         type: this.get('type'),
         image: this.get('image'),
         bedrooms: this.get('bedrooms'),
+        cost: this.get('cost')
       };
       this.set('updateRentalForm', false);
       this.sendAction('update', rental, params);

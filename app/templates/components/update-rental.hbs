@@ -27,6 +27,11 @@
           {{input value=image id="image" placeholder=rental.image}}
         </div>
 
+        <div class="form-group">
+          <label for="cost">Cost per night</label>
+          {{input value=cost id="cost"}}
+        </div>
+
         <button class="btn btn-success" {{action 'update' rental}}>Save</button>
       </form>
     </div>
