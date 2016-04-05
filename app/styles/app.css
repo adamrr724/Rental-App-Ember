@@ -146,3 +146,15 @@ li {
   color: green;
   font-size: 20px;
 }
+
+.city {
+  text-align: center;
+}
+
+.city_header {
+  text-align: center;
+}
+
+.new-city {
+  text-align: center;
+}
