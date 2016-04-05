@@ -1,15 +1,22 @@
+<div class="city-tile">
+
 <h4>Location: {{fullLocation}}</h4>
 
 <h5>Rentals available in {{city.name}}</h5>
 {{sorting-options sendCost="costSort" sendBedrooms="bedroomsSort"}}
+<div class="row">
 <ul>
   {{#each sortedRentals as |rental|}}
-    <li>{{rental.owner}}'s {{rental.type}}</li>
-    <li>{{rental-cost rental}}</li>
-    <li># of bedrooms: {{rental.bedrooms}}</li>
-    <li><img src="{{rental.image}}" alt="" /></li>
+    <div class="city-tiles col-md-4">
+      <h4>{{rental.owner}}'s {{rental.type}}</h4>
+      <p class="cost-signs">{{rental-cost rental}}</p>
+      <li># of bedrooms: {{rental.bedrooms}}</li>
+      <li><img class="image_rental_details" src="{{rental.image}}" alt="" /></li>
+    </div>
   {{/each}}
 </ul>
-<button class="btn btn-danger btn-lg"{{action 'destroyCity' city}}type="button" name="button">Destroy City</button>
+</div>
+</div>
+<button class="destroy-button btn btn-danger btn-lg"{{action 'destroyCity' city}}type="button" name="button">Destroy City</button>
 
 {{yield}}

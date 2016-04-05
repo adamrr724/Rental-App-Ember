@@ -104,6 +104,7 @@ li {
 
 .map {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .rental_details {
@@ -118,4 +119,30 @@ li {
   border-radius: 10px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.rental {
+  text-align: center;
+}
+
+.show_map {
+  margin-bottom: 15px;
+}
+
+.city-tiles {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.city-tile {
+  text-align: center;
+}
+
+.destroy-button {
+  margin-bottom: 10px;
+}
+
+.cost-signs {
+  color: green;
+  font-size: 20px;
 }
