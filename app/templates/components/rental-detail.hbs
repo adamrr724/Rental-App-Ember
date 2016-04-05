@@ -2,5 +2,10 @@
 <h5>{{rental-cost rental}}</h5>
 <br>
 <p><img src={{rental.image}} alt={{rental.type}} /></p>
+<br>
+<div>
+  <h3>Map of {{rental.owner}}'s {{rental.type}}</h3>
+  {{google-map rental=rental}}
+</div>
 
 <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>

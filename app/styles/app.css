@@ -91,3 +91,8 @@ li {
 .images-rentals {
   border-radius: 10px;
 }
+
+.map-display {
+    height: 600px;
+    width: 600px;
+  }

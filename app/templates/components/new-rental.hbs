@@ -27,6 +27,16 @@
           {{input value=cost type="number" id="cost"}}
         </div>
 
+        <div class="form-group">
+         <label for="latitude">Latitude</label>
+         {{input value=latitude id="latitude"}}
+       </div>
+
+       <div class="form-group">
+         <label for="longitude">Longitude</label>
+         {{input value=longitude id="longitude"}}
+       </div>
+
         <button {{action 'save1'}}>Save</button>
       </form>
       <button {{action 'formHide'}} class="hide-form btn btn-warning">Hide</button>
