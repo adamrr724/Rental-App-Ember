@@ -1,9 +1,11 @@
+<div class="rental_details container col-md-6">
 <h4>Located in {{rental.city.name}}, this {{rental.bedrooms}} bedroom {{rental.type}} is available by arrangement through {{rental.owner}}.</h4>
 <h5>{{rental-cost rental}}</h5>
 <br>
-<p><img src={{rental.image}} alt={{rental.type}} /></p>
+<p><img class="image_rental_details" src={{rental.image}} alt={{rental.type}} /></p>
 <br>
-<div>
+</div>
+<div class="map col-md-6">
   <h3>Map of {{rental.owner}}'s {{rental.type}}</h3>
   {{google-map rental=rental}}
 </div>

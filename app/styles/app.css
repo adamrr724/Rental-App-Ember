@@ -5,6 +5,8 @@ font-family: 'Fira Sans', sans-serif;
 img {
 width: 350px;
 height: 250px;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 body{
@@ -71,6 +73,7 @@ li {
   padding-bottom: 8em;*/
   margin: 1em;
   border-radius: 10px;
+  color: white;
 }
 
 .link a{
@@ -90,9 +93,29 @@ li {
 
 .images-rentals {
   border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .map-display {
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 500px;
   }
+
+.map {
+  text-align: center;
+}
+
+.rental_details {
+  text-align: center;
+}
+
+.rental_header {
+  text-align: center;
+}
+
+.image_rental_details{
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}

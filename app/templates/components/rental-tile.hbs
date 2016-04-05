@@ -4,13 +4,12 @@
       <img class="images-rentals" src="{{rental.image}}" alt="" {{action 'bigImageHide'}}/>
   </div>
 {{else}}
+{{#link-to 'rental' rental.id}}
   <div class="places-showing col-md-4">
-    <li class="link">{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city.name}} {{/link-to}} <br>
-      {{#if isImageShowing}}
-        <button {{action 'imageHide'}} class="btn btn-warning">Hide Image</button>
-      {{else}}
-        <button {{action 'imageShow'}} class="btn btn-success">Show Image</button>
-      {{/if}}
-    </li>
-</div>
+    <p>
+      {{rental.owner}}'s {{rental.type}} in {{rental.city.name}}<br>
+      Please click for details!
+    </p>
+  </div>
+{{/link-to}}
 {{/if}}
