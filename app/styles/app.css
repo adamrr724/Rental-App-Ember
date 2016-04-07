@@ -23,8 +23,8 @@ body{
 
 .jumbotron {
   background-image: url("http://blog.iamnikon.com/en_GB/wp-content/uploads/SCOTT-A-WOODWARD_1SW1943.jpg");
+  background-size: cover;
   padding-bottom: 20em;
-  background-size: 90em;
 }
 
 .jumbotron h1{
