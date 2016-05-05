@@ -51,7 +51,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/GITHUB-REPO-NAME/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
