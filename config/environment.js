@@ -51,7 +51,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/GITHUB-REPO-NAME/dist';
+    ENV.baseURL = '/rental-app-ember/dist';
     ENV.locationType = 'hash';
   }
 
